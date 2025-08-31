@@ -150,20 +150,7 @@ end
        $display("TEST PASSED");
       $finish;
 
-      /*for (test=1; test<=3; test=test+1) begin : TESTS
-          integer clocks;
-          reg [1:12*8] testfile ;
-          testfile = { "CPUtest", 8'h30+test, ".txt" } ;
-          $readmemb ( testfile, risc_inst.memory_inst.array ) ;
-          $display("Doing test %s", testfile);
-          case ( test )
-            1: clocks=138;
-            2: clocks=106;
-            3: clocks=938;
-          endcase
-          reset;
-          clock(clocks); expect(0); clock(1); expect(1);
-        end*/
+     
 
      
 
